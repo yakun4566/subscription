@@ -5,26 +5,6 @@ export default defineAppConfig({
   name: '虎牙直播',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          key: 0,
-          matches: '[id=`com.duowan.kiwi:id/skip_time`]',
-        },
-        {
-          key: 1,
-          matches:
-            '[id="com.duowan.kiwi:id/ams_splash_ad_container"] >2 [text^="跳过"]',
-          snapshotUrls: ['https://i.gkd.li/import/13052592'],
-        },
-      ],
-    },
-    {
       key: 1,
       name: '青少年模式弹窗',
       activityIds: [
@@ -32,7 +12,7 @@ export default defineAppConfig({
         'com.duowan.kiwi.immersepage.impl.ImmersePageActivity',
       ],
       quickFind: true,
-      matchLauncher: true,
+
       rules:
         '[id="com.duowan.kiwi:id/hyui_dialog_button_positive"][text="我知道了"]',
       snapshotUrls: 'https://i.gkd.li/import/12908790',
@@ -89,6 +69,31 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/import/13440833',
         },
       ],
+    },
+    {
+      key: 4,
+      name: '弹窗广告',
+      rules: [
+        {
+          key: 0,
+          activityIds: 'com.duowan.kiwi.homepage.Homepage',
+          matches:
+            '[id="com.duowan.kiwi:id/animation_view"] + [id="com.duowan.kiwi:id/v_close"]',
+          snapshotUrls: 'https://i.gkd.li/import/13625453',
+        },
+      ],
+    },
+    {
+      enable: false,
+      key: 5,
+      name: 'root提示',
+      desc: '您的设备已经被ROOT',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '[text^="您的设备已经被ROOT"] + LinearLayout [text="确认"]',
+      snapshotUrls: 'https://i.gkd.li/import/13536744',
     },
   ],
 });

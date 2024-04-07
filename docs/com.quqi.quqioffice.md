@@ -1,15 +1,10 @@
 # 曲奇云盘
 
-存在 2 规则组 - [com.quqi.quqioffice](/src/apps/com.quqi.quqioffice.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12854643)
-- [快照-1](https://i.gkd.li/import/12854691)
+存在 1 规则组 - [com.quqi.quqioffice](/src/apps/com.quqi.quqioffice.ts)
 
 ## 私人云-看图-弹窗广告
 
-在线私人云看图片自动弹出自动播放可跳过广告
+默认禁用 - 在线私人云看图片自动弹出自动播放可跳过广告
 
 - [快照-0](https://i.gkd.li/import/12854650)
 - [快照-1](https://i.gkd.li/import/12854723)

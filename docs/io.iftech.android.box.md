@@ -1,17 +1,16 @@
 # 小组件盒子
 
-存在 4 规则组 - [io.iftech.android.box](/src/apps/io.iftech.android.box.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12706213)
-- [快照-1](https://i.gkd.li/import/12706219)
+存在 3 规则组 - [io.iftech.android.box](/src/apps/io.iftech.android.box.ts)
 
 ## 更新弹窗
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12706195)
 
 ## 第三方 SDK 广告
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12706209)
 - [快照-1](https://i.gkd.li/import/12706209)

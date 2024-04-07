@@ -3,20 +3,8 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.apkpure.aegon',
   name: 'APKPure',
+  deprecatedKeys: [0],
   groups: [
-    {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          matches: '[text$="跳过"||text^="Skip"]',
-          snapshotUrls: 'https://i.gkd.li/import/13466685',
-        },
-      ],
-    },
     {
       key: 1,
       name: '热门推荐关闭',
@@ -71,6 +59,18 @@ export default defineAppConfig({
           preKeys: 0,
           matches: 'TextView[text="关闭"]',
           snapshotUrls: 'https://i.gkd.li/import/13466610',
+        },
+      ],
+    },
+    {
+      key: 4,
+      name: '添加桌面快捷方式',
+      desc: '下次添加',
+      rules: [
+        {
+          activityIds: 'com.apkpure.aegon.main.activity.MainTabActivity',
+          matches: '[id="com.apkpure.aegon:id/arg"][text="下次添加"]',
+          snapshotUrls: 'https://i.gkd.li/import/13416401',
         },
       ],
     },

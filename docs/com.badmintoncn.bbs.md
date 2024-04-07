@@ -2,7 +2,8 @@
 
 存在 1 规则组 - [com.badmintoncn.bbs](/src/apps/com.badmintoncn.bbs.ts)
 
-## 开屏广告
+## 弹窗广告
 
-- [快照-0](https://i.gkd.li/import/13258044)
-- [快照-1](https://i.gkd.li/import/13379472)
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13635224)

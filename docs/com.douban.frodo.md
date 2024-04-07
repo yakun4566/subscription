@@ -1,12 +1,6 @@
 # 豆瓣
 
-存在 10 规则组 - [com.douban.frodo](/src/apps/com.douban.frodo.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12505151)
-- [快照-1](https://i.gkd.li/import/12505152)
-- [快照-2](https://i.gkd.li/import/12506164)
+存在 9 规则组 - [com.douban.frodo](/src/apps/com.douban.frodo.ts)
 
 ## 不分享/同步作品短评
 
@@ -16,6 +10,8 @@
 - [快照-1](https://i.gkd.li/import/12508777)
 
 ## 剧照广告
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12509475)
 - [快照-1](https://i.gkd.li/import/12509476)
@@ -34,7 +30,7 @@
 
 ## 卡片广告
 
-书影音-卡片广告-点击卡片右下角"广告"文字
+默认禁用 - 书影音-卡片广告-点击卡片右下角"广告"文字
 
 - [快照-0](https://i.gkd.li/import/12548160)
 - [快照-1](https://i.gkd.li/import/12548131)
@@ -42,9 +38,13 @@
 
 ## 关闭评分反馈弹窗
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12548314)
 
-## 帖子内容与评论区中间的卡片式广告
+## 搜索页/帖子内容与评论区中间的卡片式广告
+
+默认禁用 - 部分有二次弹窗
 
 - [快照-0](https://i.gkd.li/import/12674798)
 - [快照-1](https://i.gkd.li/import/12674842)
@@ -56,18 +56,19 @@
 - [快照-7](https://i.gkd.li/import/12548450)
 - [快照-8](https://i.gkd.li/import/12723751)
 - [快照-9](https://i.gkd.li/import/13062693)
-- [快照-10](https://i.gkd.li/import/12548016)
-- [快照-11](https://i.gkd.li/import/12723422)
+- [快照-10](https://i.gkd.li/import/13692895)
+- [快照-11](https://i.gkd.li/import/12548016)
+- [快照-12](https://i.gkd.li/import/12723422)
 
 ## 个性化内容推荐弹窗
 
-首页底部-个性化内容推荐弹窗-点击卡片右上角x直接关闭
+默认禁用 - 首页底部-个性化内容推荐弹窗-点击卡片右上角x直接关闭
 
 - [快照-0](https://i.gkd.li/import/12836798)
 
 ## 弹窗广告
 
-浏览详情时弹窗广告,点击右上角x
+默认禁用 - 浏览详情时弹窗广告,点击右上角x
 
 - [快照-0](https://i.gkd.li/import/13195565)
 - [快照-1](https://i.gkd.li/import/13296656)
@@ -75,4 +76,7 @@
 
 ## 版本更新
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/13228832)
+- [快照-1](https://i.gkd.li/import/13659160)

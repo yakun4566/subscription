@@ -5,29 +5,6 @@ export default defineAppConfig({
   name: '喜马拉雅',
   groups: [
     {
-      key: -1,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          matches:
-            '[id="com.ximalaya.ting.android:id/xm_ad_host_count_down_click_lay"]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12506207',
-            'https://i.gkd.li/import/12506273',
-          ],
-        },
-        {
-          matches:
-            'TextView[text^="跳过"] < @LinearLayout +3 TextView[text^="跳转详情"]',
-          snapshotUrls: ['https://i.gkd.li/import/12877937'],
-        },
-      ],
-    },
-    {
       key: 0,
       name: '首页右侧浮动广告',
       quickFind: true,
@@ -53,6 +30,14 @@ export default defineAppConfig({
           name: '喜马小游戏广告',
           matches: '[id="com.ximalaya.ting.android:id/host_game_close_tv"]',
           snapshotUrls: 'https://i.gkd.li/import/12927110',
+        },
+        {
+          key: 2,
+          name: '体验会员广告',
+          matches: '[id="com.ximalaya.ting.android:id/main_iv_close"]',
+          exampleUrls:
+            'https://m.gkd.li/6328439/ea870e6f-07c9-4167-ab62-03e52838110b',
+          snapshotUrls: 'https://i.gkd.li/import/13546642',
         },
       ],
     },

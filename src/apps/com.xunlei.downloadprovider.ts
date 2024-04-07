@@ -6,19 +6,8 @@ export default defineAppConfig({
   deprecatedKeys: [11],
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[text^="跳过"][text.length<=10]',
-      snapshotUrls: 'https://i.gkd.li/import/12707693',
-    },
-    {
       key: 1,
       name: '视频详情页广告',
-      quickFind: true,
       rules: [
         {
           key: 0,
@@ -35,6 +24,7 @@ export default defineAppConfig({
           key: 1,
           name: '点击不感兴趣',
           activityIds: [
+            'com.xunlei.downloadprovider.frame.MainTabActivity',
             'com.xunlei.downloadprovider.download.taskdetails.newui.DownloadDetailsActivity',
             'com.xunlei.downloadprovider.feedback.view',
           ],
@@ -42,6 +32,7 @@ export default defineAppConfig({
           matches:
             '[id="com.xunlei.downloadprovider:id/feedback_not_interested_layout"]',
           snapshotUrls: [
+            'https://i.gkd.li/import/13625418', // activityId: 'com.xunlei.downloadprovider.frame.MainTabActivity',
             'https://i.gkd.li/import/12707717', // activityId: 'com.xunlei.downloadprovider.download.taskdetails.newui.DownloadDetailsActivity',
             'https://i.gkd.li/import/12707702', // activityId: 'com.xunlei.downloadprovider.feedback.view'
           ],
@@ -97,14 +88,17 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
-          matchLauncher: true,
+          activityIds: [
+            'com.xunlei.downloadprovider.frame.MainTabActivity',
+            'com.xunlei.downloadprovider.launch.LaunchActivity',
+          ],
           matches: '@[text="关闭"] +n * >n [text*="广告"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12868648',
             'https://i.gkd.li/import/12879372',
             'https://i.gkd.li/import/12882366',
             'https://i.gkd.li/import/12892871',
+            'https://i.gkd.li/import/13799878',
           ],
         },
 
@@ -115,7 +109,7 @@ export default defineAppConfig({
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches:
             'Image[text=""] < @View + View +n View > View > TextView[text$="广告"][text.length<=10]',
-          delay: 1000,
+          actionDelay: 1000,
           snapshotUrls: [
             'https://i.gkd.li/import/12868667',
             'https://i.gkd.li/import/12881946',
@@ -150,12 +144,21 @@ export default defineAppConfig({
             'ImageView - LinearLayout - FrameLayout > FrameLayout > ImageView',
           snapshotUrls: 'https://i.gkd.li/import/12882237',
         },
+        {
+          key: 23,
+          activityIds:
+            'com.xunlei.downloadprovider.download.taskdetails.newui.DownloadDetailsActivity',
+          quickFind: true,
+          matches:
+            '[id="com.xunlei.downloadprovider:id/hermes_ad_banner_negative"]',
+          snapshotUrls: 'https://i.gkd.li/import/13597068',
+        },
 
         // 快手广告
         {
           key: 30,
           activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
-          matchLauncher: true,
+
           matches:
             'ImageView < @ViewGroup[visibleToUser=true] < ViewGroup +n ViewGroup > [text="广告"]',
           snapshotUrls: [
@@ -171,6 +174,15 @@ export default defineAppConfig({
           matches:
             '[text="广告"] <2 ViewGroup -2 ViewGroup >n [text="跳过"] + ImageView',
           snapshotUrls: 'https://i.gkd.li/import/12881976',
+        },
+        {
+          key: 32,
+          activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
+          matches: [
+            'ViewGroup[childCount=2] > ImageView + TextView[text="广告"]',
+            'ViewGroup[childCount=1] > @ViewGroup[childCount=1][clickable=true] > ImageView[childCount=0]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/import/13761275',
         },
         {
           key: 2,

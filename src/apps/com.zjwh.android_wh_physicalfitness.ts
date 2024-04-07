@@ -5,24 +5,6 @@ export default defineAppConfig({
   name: '运动世界校园',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          key: 0,
-          quickFind: true,
-          matches: '[text*="跳过"][text.length<=10]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/13166424',
-            'https://i.gkd.li/import/13228145',
-          ],
-        },
-      ],
-    },
-    {
       key: 1,
       name: '优量汇广告',
       activityIds: [
@@ -57,8 +39,10 @@ export default defineAppConfig({
     {
       key: 3,
       name: '快手广告',
-      activityIds:
+      activityIds: [
         'com.zjwh.android_wh_physicalfitness.activity.SplashActivity',
+        'com.zjwh.android_wh_physicalfitness.ui.AdActivity',
+      ],
       rules: [
         {
           key: 0,
@@ -79,9 +63,22 @@ export default defineAppConfig({
           key: 2,
           matches:
             '[id="com.zjwh.android_wh_physicalfitness:id/ksad_tk_view"] >n ViewGroup > @ViewGroup[childCount=1] > ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/13228216',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13228216',
+            'https://i.gkd.li/import/13601132', //com.zjwh.android_wh_physicalfitness.ui.AdActivity
+          ],
         },
       ],
+    },
+    {
+      key: 4,
+      name: '百度广告',
+      activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
+      actionMaximum: 1,
+      resetMatch: 'activity',
+      matchTime: 10000,
+      rules: '@ImageView - RelativeLayout[childCount=9]',
+      snapshotUrls: 'https://i.gkd.li/import/13554229',
     },
     {
       key: 9,

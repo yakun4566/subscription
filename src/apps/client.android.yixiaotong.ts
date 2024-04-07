@@ -3,46 +3,45 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'client.android.yixiaotong',
   name: '乐校通',
+  deprecatedKeys: [0],
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[text^="跳过"][text.length<=10]',
-      snapshotUrls: 'https://i.gkd.li/import/13055542',
-    },
-    {
       key: 1,
-      name: '应用内广告弹窗',
-      activityIds:
-        'client.android.yixiaotong.v3.ui.appcontrol.bath.BathDetailActivity',
+      name: '弹窗广告',
       rules: [
-        // 腾讯广告
         {
           key: 0,
+          name: '腾讯广告',
+          activityIds:
+            'client.android.yixiaotong.v3.ui.appcontrol.bath.BathDetailActivity',
           matches:
-            'ImageView - FrameLayout > ImageView +2 FrameLayout > ImageView',
+            'ImageView - FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
           snapshotUrls: 'https://i.gkd.li/import/13055837',
         },
-
-        // 快手广告
         {
-          key: 2,
+          key: 1,
+          name: '快手广告-1',
           activityIds:
             'client.android.yixiaotong.v3.ui.appcontrol.bath.BathDetailActivity',
           matches:
             '[id="client.android.yixiaotong:id/ksad_tk_view"] >n ViewGroup + ViewGroup > @ViewGroup > ImageView',
           snapshotUrls: 'https://i.gkd.li/import/13060116',
         },
+        {
+          key: 2,
+          name: '快手广告-2',
+          activityIds: [],
+          matches: [
+            'ViewGroup[childCount=2] > ImageView + [text="广告"]',
+            'ViewGroup[childCount=1] > @ViewGroup[childCount=1] > ImageView[childCount=0]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/import/13625511',
+        },
       ],
     },
     {
       key: 2,
       name: '卡片式广告',
-
       rules: [
         {
           key: 0,

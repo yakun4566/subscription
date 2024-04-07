@@ -5,21 +5,18 @@ export default defineAppConfig({
   name: '嘀嗒出行',
   groups: [
     {
-      key: 0,
+      key: 1,
       name: '开屏广告',
-      matchLauncher: true,
-      quickFind: true,
-      activityIds: 'com.didapinche.booking.home.activity.StartActivity',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-          snapshotUrls: 'https://i.gkd.li/import/13051862',
-        },
-        {
-          matches: '[id="com.didapinche.booking:id/tv_full_skip"]',
+          quickFind: true,
+          matches: '@View[clickable=true] <n * <2 * < [vid="flCSJAdContainer"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13051805',
-            'https://i.gkd.li/import/13051792',
+            'https://i.gkd.li/import/13988957',
+            'https://i.gkd.li/import/13989178',
           ],
         },
       ],

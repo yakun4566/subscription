@@ -5,19 +5,6 @@ export default defineAppConfig({
   name: '虎扑',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      desc: '开屏广告,任意界面切回APP广告',
-      rules:
-        '[id="com.byted.pangle:id/tt_splash_skip_btn"||id="com.hupu.games:id/tv_time"&&text*="跳过"]',
-      snapshotUrls: [
-        'https://i.gkd.li/import/12509060',
-        'https://i.gkd.li/import/12510962',
-        'https://i.gkd.li/import/12567546',
-        'https://i.gkd.li/import/12567546',
-      ],
-    },
-    {
       key: 1,
       activityIds: [
         'com.hupu.games.main.MainActivity',

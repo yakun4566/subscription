@@ -2,6 +2,8 @@
 
 存在 1 规则组 - [cn.ccspeed](/src/apps/cn.ccspeed.ts)
 
-## 开屏广告
+## 加速页-分享抽奖浮窗
 
-- [快照-0](https://i.gkd.li/import/13334790)
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13539299)

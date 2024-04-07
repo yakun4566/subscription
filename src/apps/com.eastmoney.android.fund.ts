@@ -5,14 +5,6 @@ export default defineAppConfig({
   name: '天天基金',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      activityIds:
-        'com.eastmoney.android.fund.centralis.activity.FundRootActivity',
-      rules: '[id="com.eastmoney.android.fund:id/ad_ignore"][text^="跳过"]',
-      snapshotUrls: 'https://i.gkd.li/import/12781533',
-    },
-    {
       key: 1,
       name: '自选页面广告',
       activityIds:
@@ -32,6 +24,14 @@ export default defineAppConfig({
         '[desc="表示场内基金的最新价和折价率"] -(2) FrameLayout < FrameLayout + ImageView',
       ],
       snapshotUrls: 'https://i.gkd.li/import/12642387',
+    },
+    {
+      key: 3,
+      name: '更新弹窗',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '@FrameLayout[clickable=true] - * >2 [desc="立即升级"]',
+      snapshotUrls: 'https://i.gkd.li/import/13546927',
     },
   ],
 });

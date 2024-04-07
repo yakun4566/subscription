@@ -7,12 +7,30 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="com.byted.pangle.m:id/tt_splash_skip_btn"]',
-      snapshotUrls: 'https://i.gkd.li/import/13476862',
+      quickFind: true,
+      actionCdKey: 0,
+      actionMaximumKey: 0,
+      rules: [
+        {
+          key: 0,
+          matches: '[id$="tt_splash_skip_btn"] <<n [vid="adsFl"]',
+          snapshotUrls: 'https://i.gkd.li/import/13476862',
+        },
+        {
+          key: 1,
+          matches: ['[vid="adsFl"]', '[text^="跳过"][text.length<=10]'],
+          snapshotUrls: 'https://i.gkd.li/import/13625367',
+        },
+        {
+          key: 2,
+          matches:
+            '@View <3 FrameLayout <2 FrameLayout < FrameLayout < FrameLayout < [vid="adsFl"]',
+          snapshotUrls: 'https://i.gkd.li/import/13820450',
+        },
+      ],
     },
   ],
 });

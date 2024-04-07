@@ -5,15 +5,6 @@ export default defineAppConfig({
   name: '腾讯手游加速器',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      activityIds: 'com.tencent.mocmna.activity.MainActivity',
-      matchLauncher: true,
-      quickFind: true,
-      rules: '[text$="跳过"]',
-      snapshotUrls: 'https://i.gkd.li/import/12847303',
-    },
-    {
       key: 1,
       name: '悬浮广告',
       activityIds: 'com.tencent.mocmna.activity.MainActivity',

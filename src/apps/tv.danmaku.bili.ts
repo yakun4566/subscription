@@ -13,7 +13,7 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="tv.danmaku.bili:id/count_down"][text^="跳过"]',
+      rules: '[id="tv.danmaku.bili:id/count_down"][text^="跳"]',
       snapshotUrls: 'https://i.gkd.li/import/12705270',
     },
     {
@@ -38,7 +38,8 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: 'TextView[text*=`青少年模式`] + TextView[text=`我知道了`]',
+      rules: 'TextView[text*="青少年模式"] +n TextView[text="我知道了"]',
+      snapshotUrls: 'https://i.gkd.li/import/13746766',
     },
     {
       key: 2,
@@ -160,13 +161,18 @@ export default defineAppConfig({
       key: 9,
       name: '请求通知权限弹窗',
       quickFind: true,
-      matchDelay: 5000,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'tv.danmaku.bili.MainActivityV2',
-      rules: '[text="打开推送通知"] +2 * > [id="tv.danmaku.bili:id/close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13229159',
+      activityIds: [
+        'tv.danmaku.bili.MainActivityV2',
+        'com.bilibili.video.story.StoryTransparentActivity',
+      ],
+      rules: '[text$="通知"] +2 * > [id="tv.danmaku.bili:id/close"]',
+      snapshotUrls: [
+        'https://i.gkd.li/import/13229159',
+        'https://i.gkd.li/import/13614090',
+      ],
     },
     {
       enable: false,
@@ -184,9 +190,14 @@ export default defineAppConfig({
         },
         {
           preKeys: 0,
+          key: 1,
           name: '点击[不感兴趣]',
-          matches: '[id="tv.danmaku.bili:id/menu_layout"] [text="不感兴趣"]',
-          snapshotUrls: 'https://i.gkd.li/import/13256605',
+          matches: '@RelativeLayout > [text$="不感兴趣"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13256605',
+            'https://i.gkd.li/import/13625309',
+            'https://i.gkd.li/import/13742257',
+          ],
         },
       ],
     },

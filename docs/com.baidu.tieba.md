@@ -1,6 +1,6 @@
 # 百度贴吧
 
-存在 9 规则组 - [com.baidu.tieba](/src/apps/com.baidu.tieba.ts)
+存在 10 规则组 - [com.baidu.tieba](/src/apps/com.baidu.tieba.ts)
 
 ## 开屏广告
 
@@ -13,7 +13,11 @@
 
 ## 申请消息提醒弹窗
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/13536170)
+- [快照-1](https://i.gkd.li/import/13675694)
+- [快照-2](https://i.gkd.li/import/13804455)
 
 ## 信息流广告
 
@@ -33,9 +37,13 @@
 
 ## 首页-推荐-列表顶部卡片式广告
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/13060892)
 
 ## 升级弹窗
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12496934)
 
@@ -48,6 +56,8 @@
 
 ## 广告弹窗
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/13060891)
 - [快照-1](https://i.gkd.li/import/13222361)
 - [快照-2](https://i.gkd.li/import/13168383)
@@ -56,9 +66,13 @@
 
 ## 悬浮小广告
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/13115167)
 - [快照-1](https://i.gkd.li/import/13327933)
 - [快照-2](https://i.gkd.li/import/13296280)
+- [快照-3](https://i.gkd.li/import/13625336)
+- [快照-4](https://i.gkd.li/import/13627881)
 
 ## 吧内-悬浮卡通-进吧逛逛
 
@@ -66,3 +80,10 @@
 
 - [快照-0](https://i.gkd.li/import/13322337)
 - [快照-1](https://i.gkd.li/import/13328738)
+
+## 功能类-贴吧内签到并关闭弹窗
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13776801)
+- [快照-1](https://i.gkd.li/import/13776424)

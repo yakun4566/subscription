@@ -5,25 +5,6 @@ export default defineAppConfig({
   name: '十六番旅行',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          key: 0,
-          matches: '[id="com.byted.pangle.m:id/tt_splash_skip_btn"]',
-          snapshotUrls: 'https://i.gkd.li/import/13258011',
-        },
-        {
-          key: 1,
-          matches: '@Image < View - View > View > TextView[text="广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/13258016',
-        },
-      ],
-    },
-    {
       key: 1,
       name: '广告卡片',
       activityIds: 'com.mvvm.view.LazyMapStrategyActivity_TengXun',
@@ -45,6 +26,16 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/import/13258018',
         },
       ],
+    },
+    {
+      key: 2,
+      name: '开启通知弹窗',
+      desc: '自动点击“以后再说”',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      rules: '[id="com.fan.app:id/tv_nj_later"]',
+      snapshotUrls: 'https://i.gkd.li/import/13601734',
     },
   ],
 });

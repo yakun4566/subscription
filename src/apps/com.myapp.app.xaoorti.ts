@@ -5,22 +5,12 @@ export default defineAppConfig({
   name: '天天视频',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[id="com.myapp.app.xaoorti:id/ksad_splash_circle_skip_view"]',
-      snapshotUrls: 'https://i.gkd.li/import/13520474',
-    },
-    {
       key: 1,
       name: '弹窗广告',
       rules: [
         {
           key: 0,
-          name: '快手广告',
+          name: '快手广告-1',
           activityIds: 'com.ys.resemble.ui.login.splash.SplashADSetActivity',
           matches: [
             'ViewGroup > ViewGroup > [text="广告"]',
@@ -30,6 +20,26 @@ export default defineAppConfig({
         },
         {
           key: 1,
+          name: '快手广告-2',
+          activityIds: 'com.ys.resemble.ui.MainActivity',
+          matches: [
+            'ViewGroup > ViewGroup > [text="广告"]',
+            '@ViewGroup > [text="跳过"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/import/13546700',
+        },
+        {
+          key: 2,
+          name: '快手广告-3',
+          activityIds: 'com.ys.resemble.ui.MainActivity',
+          matches: [
+            'ViewGroup > ViewGroup > [text="广告"]',
+            'ViewGroup > @ViewGroup[childCount=1] > ImageView[childCount=0]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/import/13546701',
+        },
+        {
+          key: 3,
           name: '腾讯广告',
           activityIds: 'com.ys.resemble.ui.login.splash.SplashADSetActivity',
           matches:

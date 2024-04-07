@@ -5,19 +5,6 @@ export default defineAppConfig({
   name: '京东金融',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchLauncher: true,
-      quickFind: true,
-      activityIds: 'com.jd.jrapp.bm.mainbox.main.MainActivity',
-      rules: [
-        {
-          matches: '[id="com.jd.jrapp:id/btn_jump"]',
-          snapshotUrls: 'https://i.gkd.li/import/13054174',
-        },
-      ],
-    },
-    {
       key: 1,
       name: '通知提醒',
       quickFind: true,
@@ -39,6 +26,26 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/import/13255656',
         },
       ],
+    },
+    {
+      key: 2,
+      name: '版本更新',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      activityIds: 'com.jd.jrapp.bm.mainbox.main.MainActivity',
+      rules:
+        '@ImageButton[id="com.jd.jrapp:id/ib_close"] + RelativeLayout [text^="发现新版本"]',
+      snapshotUrls: 'https://i.gkd.li/import/13628364',
+    },
+    {
+      key: 3,
+      name: '满意度打分弹窗',
+      actionMaximum: 1,
+      resetMatch: 'activity',
+      rules: '[text*="满意度打几分"] + ImageView',
+      snapshotUrls: 'https://i.gkd.li/import/13804561',
     },
   ],
 });

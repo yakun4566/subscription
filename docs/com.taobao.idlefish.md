@@ -1,12 +1,21 @@
 # 闲鱼
 
-存在 2 规则组 - [com.taobao.idlefish](/src/apps/com.taobao.idlefish.ts)
+存在 3 规则组 - [com.taobao.idlefish](/src/apps/com.taobao.idlefish.ts)
 
-## 开屏广告
+## 通知提示
 
-- [快照-0](https://i.gkd.li/import/12668670)
-- [快照-1](https://i.gkd.li/import/13049015)
-
-## 请求开启通知权限弹窗
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/13538351)
+
+## 权限提示
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13620277)
+
+## 更新提示
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13832272)

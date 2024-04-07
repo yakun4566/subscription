@@ -1,12 +1,10 @@
 # 掌上生活
 
-存在 5 规则组 - [com.cmbchina.ccd.pluto.cmbActivity](/src/apps/com.cmbchina.ccd.pluto.cmbActivity.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12647186)
+存在 4 规则组 - [com.cmbchina.ccd.pluto.cmbActivity](/src/apps/com.cmbchina.ccd.pluto.cmbActivity.ts)
 
 ## 版本更新
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12647025)
 - [快照-1](https://i.gkd.li/import/12727203)
@@ -14,10 +12,14 @@
 
 ## 首页弹窗
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12647000)
 - [快照-1](https://i.gkd.li/import/13360282)
 
 ## 右侧悬浮广告
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12647039)
 - [快照-1](https://i.gkd.li/import/12647052)

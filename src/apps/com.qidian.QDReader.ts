@@ -5,16 +5,6 @@ export default defineAppConfig({
   name: '起点读书',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[text^="跳过"][text.length<=10]',
-      snapshotUrls: ['https://i.gkd.li/import/12508836'],
-    },
-    {
       key: 1,
       name: '更新弹窗',
       quickFind: true,
@@ -113,6 +103,32 @@ export default defineAppConfig({
       activityIds: 'com.qidian.QDReader.flutter.DailyReadingMainPageActivity',
       rules: 'View[desc="更多游戏"] - ImageView[clickable=true]',
       snapshotUrls: 'https://i.gkd.li/import/13406169',
+    },
+    {
+      key: 12,
+      name: '福利中心-我知道了',
+      desc: '福利中心看视频后获得奖励，自动点击“我知道了”',
+      activityIds: 'com.qidian.QDReader.ui.activity.QDBrowserActivity',
+      actionMaximum: 1,
+      resetMatch: 'activity',
+      matchTime: 10000,
+      rules: 'View[desc="我知道了"]',
+      snapshotUrls: 'https://i.gkd.li/import/13606901',
+    },
+    {
+      key: 13,
+      quickFind: true,
+      name: '全屏广告-红包弹窗',
+      desc: '点击X',
+      rules: [
+        {
+          activityIds:
+            'com.qidian.QDReader.ui.activity.hongbao_square.NewHongBaoSquareActivity',
+          matches:
+            '[id="com.qidian.QDReader:id/rootView"] > [id="com.qidian.QDReader:id/btnHongbaoClose"]',
+          snapshotUrls: 'https://i.gkd.li/import/13918466',
+        },
+      ],
     },
   ],
 });

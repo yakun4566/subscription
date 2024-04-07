@@ -1,20 +1,17 @@
 # 飞韵听书
 
-存在 3 规则组 - [com.vo.icea](/src/apps/com.vo.icea.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/13445848)
-- [快照-1](https://i.gkd.li/import/13440325)
+存在 2 规则组 - [com.vo.icea](/src/apps/com.vo.icea.ts)
 
 ## 播放界面卡片式广告
 
-需点击二次弹窗关闭原因
+默认禁用 - 需点击二次弹窗关闭原因
 
 - [快照-0](https://i.gkd.li/import/13510973)
 - [快照-1](https://i.gkd.li/import/13510972)
 
 ## 首页广告弹窗
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/13511052)
 - [快照-1](https://i.gkd.li/import/13511645)

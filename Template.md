@@ -1,8 +1,14 @@
 # @gkd-kit/subscription
 
-GKD 默认订阅规则
+`默认规则` 仅启用 `开屏广告` 一类规则, 其它所有规则均需用户手动打开
 
-当前订阅为 APP 自带, 无需手动添加, 当前版本: v--VERSION--
+在 GKD 内添加以下链接即可使用此规则
+
+```txt
+https://fastly.jsdelivr.net/npm/@gkd-kit/subscription
+```
+
+当前版本: v--VERSION--
 
 当前订阅文件已适配 --APP_SIZE-- 个 APP, 共有 --GROUP_SIZE-- 规则组
 
@@ -13,13 +19,3 @@ GKD 默认订阅规则
 ## 感谢以下开发者的贡献
 
 ![img](https://contrib.rocks/image?repo=gkd-kit/subscription&_v=--VERSION--)
-
-## 其它
-
-本仓库额外构建了一个仅启用 开屏广告 规则的订阅
-
-你可以将默认订阅删除后, 添加此订阅, 订阅链接如下
-
-```txt
-https://registry.npmmirror.com/@gkd-kit/subscription/latest/files/dist/gkd.openad.json
-```
